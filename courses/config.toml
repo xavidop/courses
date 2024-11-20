@@ -1,0 +1,37 @@
+# End your baseURL with a `/` trailing slash, e.g. `https://example.com/`.
+baseURL = "https://courses.xavidop.me"
+
+title = "Courses"
+languageCode = "en-us"
+theme = "codelabs"
+
+[params]
+  homeTitle = "Learn Cloud, Programming and AI through a set of tutorials!!"
+  homeDescription = """
+Welcome to my codelab. This codelab is built by Xavier Portilla Edo, and it tries to provide step-by-step hands-on guide on a variety of technologies including Gemini, ChatGPT, GCP, AWS, Firebase, Keras, TensorFlow, TensorFlow Extended, HuggingFace, Gradio, Chainlit, and more! 
+"""
+  footer = "<a href=\"https://github.com/xavidop/courses\">Visit the GitHub Repository</a>"
+  feedbackLink = "mailto:xavierportillaedo@gmail.com"
+  [params.categoryColors]
+    mlops = "#1A73E8"
+    tfx = "#f58442"
+    gcp = "#3884ff"
+    jupyter = "#fc4903"
+    openai = "#001a00"
+    chatgpt = "#74aa9d"
+    gemini = "#5983d1"
+    gemma = "#5983d1"
+    huggingface = "#ffbf00"
+    gradio = "#ffbf00"
+    keras = "#ff0000"
+    dstack = "#cc00ff"
+    dspy = "#ff5c33"
+    hf_hub = "#ffbf00"
+    mistral = "#ff471a"
+    aws = "#ff9900"
+    azure = "#4d4dff"
+    vertexai = "#659df6"
+    meta = "#659df6"
+    solar = "#5983d1"
+    phi2 = "#001a00"
+    firebase = "#001a00"

@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta property="og:url" content="https://gde-codelabs.github.io">
+  <meta property="og:title" content="Xavier Portilla Edo's Codelabs">
+  <meta property="og:image" content="https://ogi.sh/gzzIXzt5-?title=Learn%20Through%20Tutorials&size=facebook&imageUrl=https://r2.easyimg.io/6wul34c5i/codelabs-background.png">
+  <meta property="og:description" content="Xavier Portilla Edo's Codelabs provides a set of tutorials on practical usage of artificial intelligence, cloud and programming">
+  <meta property="og:site_name" content="Xavier Portilla Edo's Codelabs">
+  <meta property="og:type" content="website" />
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Xavier Portilla Edo's Codelabs">
+  <meta name="twitter:title" content="Xavier Portilla Edo's Codelabs">
+  <meta name="twitter:description" content="Xavier Portilla Edo's Codelabs provides a set of tutorials on practical usage of artificial intelligencem cloud and programming">
+  <meta name="twitter:image" content="https://ogi.sh/gzzIXzt5-?title=Learn%20Through%20Tutorials&size=facebook&imageUrl=https://r2.easyimg.io/6wul34c5i/codelabs-background.png">
+  
+  <title>Codelabs</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}google_codelab_index_scss_bin.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}google_codelab_index_scss_overide.css">
+  {{ if .Site.Params.categoryColors -}}
+  {{- $style := resources.Get "scss/categories.scss" | resources.ExecuteAsTemplate "categories.scss" . | resources.ToCSS -}}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{ end -}}
+  <style>
+    body {
+      transition: opacity ease-in 0.2s;
+    }
+
+    body[unresolved] {
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body unresolved>
+  <google-codelab-index>
+    <header id="toolbar">
+      <div class="site-width">
+        <div class="logo">
+          <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </div>
+        <div id="searchbar">
+          <i id="search-icon" class="material-icons">search</i>
+          <input placeholder="Search" id="search-field" type="text">
+          <a href="#" id="clear-icon" hide class="material-icons">close</a>
+        </div>
+      </div>
+    </header>
+    {{ if .Site.Params.homeTitle -}}
+    <header id="banner">
+      <div class="site-width">
+        <h2>{{ .Site.Params.homeTitle }}</h2>
+        {{ if .Site.Params.homeDescription -}}
+        <p>{{ .Site.Params.homeDescription | markdownify }}</p>
+        {{ end -}}
+      </div>
+    </header>
+    {{ end -}}
+    <main>
+      <div class="main-inner site-width">
+        <ul>
+
+          {{ range .Site.RegularPages -}}
+          {{ if eq .Type "posts" -}}
+          <li>
+            <a href="{{ .Permalink }}"
+              id="{{ .Title | urlize }}"
+              category="{{ delimit .Params.categories "," }}"
+              title="{{ .Title }}"
+              {{ if .Params.duration -}}
+              duration="{{ .Params.duration }}"
+              {{ end -}}
+              updated="{{ .Params.date }}"
+              tags="{{ delimit .Params.tags "," }}"
+              {{ if .Params.authors -}}
+              authors="{{ .Params.authors }}"
+              {{ end -}}>
+            </a>
+          </li>
+          {{ end }}
+          {{ end -}}
+        </ul>
+      </div>
+    </main>
+    {{ if .Site.Params.footer -}}
+    <footer>
+      <div class="footerbar">
+        <div class="site-width">
+          {{ .Site.Params.footer | safeHTML }}
+        </div>
+      </div>
+    </footer>
+    {{ end -}}
+  </google-codelab-index>
+  <script src="{{ .Site.BaseURL }}native-shim.js"></script>
+  <script src="{{ .Site.BaseURL }}custom-elements.min.js"></script>
+  <script src="{{ .Site.BaseURL }}google_codelab_index_bin.js"></script>
+  <script src="{{ .Site.BaseURL }}google_codelab_index_overide.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:image" content="https://ogi.sh/gzzIXzt5-?title={{ .Title }}&size=facebook&imageUrl=https://r2.easyimg.io/6wul34c5i/codelabs-background.png">
+  <meta property="og:description" content="Xavier Portilla Edo's Codelabs provides a set of tutorials on practical usage of artificial intelligence, cloud and programming">
+  <meta property="og:site_name" content="Xavier Portilla Edo's Codelabs">
+  <meta property="og:type" content="website" />
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="{{ .Title }}">
+  <meta name="twitter:title" content="Xavier Portilla Edo's Codelabs">
+  <meta name="twitter:description" content="Xavier Portilla Edo's Codelabs provides a set of tutorials on practical usage of artificial intelligence, cloud and programming">
+  <meta name="twitter:image" content="https://ogi.sh/gzzIXzt5-?title={{ .Title }}&size=facebook&imageUrl=https://r2.easyimg.io/6wul34c5i/codelabs-background.png">
+  
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}google_codelab_step_scss_bin.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}google_codelab_survey_scss_bin.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}google_codelab_scss_bin.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}google_codelab_step_overide.css">
+  <style>
+    body {
+      transition: opacity ease-in 0.2s;
+    }
+
+    body[unresolved] {
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body unresolved>
+  <google-codelab title="{{ .Title }}" id="{{ .Title | urlize }}" authors="{{ .Params.authors }}" environment="web" {{ if .Site.Params.feedbackLink }}feedback-link="{{ .Site.Params.feedbackLink }}"{{ end }} home-url="{{ .Site.BaseURL }}">
+
+{{ .Content }}
+
+  </google-codelab>
+  <script src="{{ .Site.BaseURL }}native-shim.js"></script>
+  <script src="{{ .Site.BaseURL }}custom-elements.min.js"></script>
+  <script src="{{ .Site.BaseURL }}prettify.js"></script>
+  <script src="{{ .Site.BaseURL }}google_codelab_step_bin.js"></script>
+  <script src="{{ .Site.BaseURL }}google_codelab_survey_bin.js"></script>
+  <script src="{{ .Site.BaseURL }}google_codelab_bin.js"></script>
+  <script src="{{ .Site.BaseURL }}google_codelab_step_overide.js"></script>
+</body>
+
+</html>
