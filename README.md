@@ -1,6 +1,4 @@
-[![CI](https://github.com/gde-codelabs/gde-codelabs.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/gde-codelabs/gde-codelabs.github.io/actions/workflows/ci.yml)
-
-# Coourses built by Xavier Portilla Edo
+# Courses built by Xavier Portilla Edo
 
 This repository holds Courses created by [Xavier Portilla Edo](https://github.com/xavidop) in collaboration
 with contributors from the community. In case you are wondering what Codelabs are, take a look [here](https://codelabs.developers.google.com/). This
