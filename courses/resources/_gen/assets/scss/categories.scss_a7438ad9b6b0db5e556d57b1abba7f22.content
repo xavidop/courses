@@ -271,6 +271,19 @@ google-codelab-index-cards .card.tfx-bottom {
   height: 32px;
   margin-right: 10px; }
 
+.typescript-bg {
+  background-color: #007acc !important; }
+
+google-codelab-index-cards .card.typescript-bottom {
+  border-bottom-color: #007acc; }
+
+.typescript-icon {
+  background-image: url("/assets/icons/typescript.svg") !important;
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px; }
+
 .vertexai-bg {
   background-color: #659df6 !important; }
 

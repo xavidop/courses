@@ -13,6 +13,7 @@ Welcome to my codelab. This codelab is built by Xavier Portilla Edo, and it trie
   footer = "<a href=\"https://github.com/xavidop/courses\">Visit the GitHub Repository</a>"
   feedbackLink = "mailto:xavierportillaedo@gmail.com"
   [params.categoryColors]
+    typescript = "#007acc"
     mlops = "#1A73E8"
     tfx = "#f58442"
     gcp = "#3884ff"

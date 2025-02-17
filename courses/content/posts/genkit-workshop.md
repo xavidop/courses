@@ -2,7 +2,7 @@
 title: Introductory workshop to Firebase GenKit
 date: 2025-02-17
 categories: [firebase, openai]
-tags: [genkit, firebase]
+tags: [genkit, firebase, typescript]
 duration: 260:00
 authors: Xavier Portilla Edo
 ---
