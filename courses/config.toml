@@ -6,9 +6,9 @@ languageCode = "en-us"
 theme = "codelabs"
 
 [params]
-  homeTitle = "Learn Cloud, Programming and AI through a set of tutorials!!"
+  homeTitle = "Learn Cloud, Programming and AI through a set of tutorials"
   homeDescription = """
-Welcome to my codelab. This codelab is built by Xavier Portilla Edo, and it tries to provide step-by-step hands-on guide on a variety of technologies including Gemini, ChatGPT, GCP, AWS, Firebase, Keras, TensorFlow, TensorFlow Extended, HuggingFace, Gradio, Chainlit, and more! 
+Welcome to my codelab. This codelab is built by Xavier Portilla Edo, and it tries to provide step-by-step hands-on guide on a variety of technologies including Gemini, GCP, AWS, Firebase, Keras, TensorFlow, TensorFlow Extended, HuggingFace, Gradio, Chainlit, and more! 
 """
   footer = "<a href=\"https://github.com/xavidop/courses\">Visit the GitHub Repository</a>"
   feedbackLink = "mailto:xavierportillaedo@gmail.com"

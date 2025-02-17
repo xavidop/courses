@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="{{ .Site.BaseURL }}google_codelab_index_scss_bin.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}google_codelab_index_scss_overide.css">
   {{ if .Site.Params.categoryColors -}}
-  {{- $style := resources.Get "scss/categories.scss" | resources.ExecuteAsTemplate "categories.scss" . | resources.ToCSS -}}
+  {{- $style := resources.Get "scss/categories.scss" | resources.ExecuteAsTemplate "categories.scss" . | css.Sass -}}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
   {{ end -}}
   <style>

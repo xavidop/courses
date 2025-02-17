@@ -1,0 +1,11 @@
+---
+model: openai/gpt-4o
+input:
+  schema:
+    text: string
+output:
+  schema:
+    text: string
+---
+
+Tell me a joke about {{text}}
