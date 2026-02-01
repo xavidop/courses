@@ -1,5 +1,5 @@
 ---
-title: Introductory workshop to Firebase GenKit
+title: Introductory workshop to GenKit
 date: 2025-02-17
 categories: [firebase, openai]
 tags: [genkit, firebase, typescript]
@@ -10,9 +10,9 @@ authors: Xavier Portilla Edo
 {{< step label="Module 1: Introduction to the framework" duration="30:00" >}}
 
 # Overview of Genkit
-![Firebase Genkit](/assets/images/genkit-workshop/module1/dark_logo.png)
+![Genkit](/assets/images/genkit-workshop/module1/dark_logo.png)
 
-Firebase Genkit is an open source framework from the Firebase team that allows you to build generative AI applications with ease. It provides a set of plugins and libraries that help you to connect to large language models, manage prompts, create retrieval-augmented generation (RAG) models and many more.
+Genkit is an open source framework from the Google team that allows you to build generative AI applications with ease. It provides a set of plugins and libraries that help you to connect to large language models, manage prompts, create retrieval-augmented generation (RAG) models and many more.
 
 In this workshop, you will learn how to use Genkit to build a simple generative AI application (Firebase function) that can auto-generate jokes based in best practices. You will learn how to connect to a large language model, manage prompts, and talk to your PDF documents.
 
@@ -889,12 +889,12 @@ Hey! This is Xavi! Author of this workshop. I am a software engineer and entrepr
 
 # Genkit Resources
 Here are some resources you can follow to get up to date with Genkit:
-- [Firebase](https://x.com/firebase) - Official Twitter account for Firebase.
+- [Genkit](https://x.com/genkitFramework) - Official Twitter account for Genkit.
 - [Genkit Discord server](https://discord.gg/qXt5zzQKpc) - Official Discord server for Genkit.
 - [Genkit GitHub](https://github.com/firebase/genkit) - Official GitHub repository for Genkit.
-- [Genkit Documentation](https://firebase.google.com/docs/genkit) - Official documentation for Genkit.
+- [Genkit Documentation](https://genkit.dev/) - Official documentation for Genkit.
 - [The Fire Company](https://github.com/TheFireCo) - The Fire Company GitHub organization.
-- [Awesome Genkit List](https://github.com/xavidop/awesome-firebase-genkit) - A curated list of Genkit resources.
+- [Awesome Genkit List](https://github.com/xavidop/awesome-genkit) - A curated list of Genkit resources.
 
 {{< /step >}}
 
